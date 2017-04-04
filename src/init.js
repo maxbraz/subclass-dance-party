@@ -6,13 +6,31 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $("body").height() * Math.random() *.8,
+      $("body").width() * Math.random() *.8,
       Math.random() * 1000
     );
-    dancer.$node.addClass(dancerMakerFunctionName);
+    // dancer.$node.addClass(dancerMakerFunctionName);
+    dancer.$node.addClass('dancer');
     dancer.$node.attr('src', dancerMakerFunctionName + '.gif')
     $('body').append(dancer.$node);
   });
+
+  $('#lineup').on('click', function(event) {
+    $(this).toggle();
+    console.log('clicked');
+  });
+
+  $('.HeMan').on('click', function(event) {
+    $(this).toggle();
+    console.log('clicked');
+  });
+
+  $('.dancer').on('click', function(event) {
+    $(this).toggle();
+    console.log('clicked');
+  });
+
+
 });
 

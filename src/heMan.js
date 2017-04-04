@@ -9,5 +9,7 @@ HeMan.prototype.step = function() {
   Dancer.prototype.step.call(this);
   
   this.$node.addClass('HeMan')
-  // this.$node.toggle();
+  var newLeft = $("body").width() * Math.random() *.8;
+  console.log(newLeft)
+  this.$node.css('left', newLeft);
 };
