@@ -10,6 +10,8 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    dancer.$node.addClass(dancerMakerFunctionName);
+    dancer.$node.attr('src', dancerMakerFunctionName + '.gif')
     $('body').append(dancer.$node);
   });
 });
