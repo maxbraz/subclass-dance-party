@@ -14,23 +14,20 @@ $(document).ready(function() {
     dancer.$node.addClass('dancer');
     dancer.$node.attr('src', dancerMakerFunctionName + '.gif')
     $('body').append(dancer.$node);
+    window.dancers.push(dancer.$node);
   });
 
   $('#lineup').on('click', function(event) {
-    $(this).toggle();
+    var newHeight = $("body").height()/2 -100;
+    console.log(newHeight);
+    for (var i = 0; i < window.dancers.length; i++) {
+      console.log(window.dancers[i]);
+      window.dancers[i].animate({top: newHeight}, 1000);
+    }
+    // $(this).toggle();
     console.log('clicked');
   });
 
-  $('.HeMan').on('click', function(event) {
-    $(this).toggle();
-    console.log('clicked');
-  });
-
-  $('.dancer').on('click', function(event) {
-    $(this).toggle();
-    console.log('clicked');
-  });
-
-
+  console.log(window.dancers)
 });
 

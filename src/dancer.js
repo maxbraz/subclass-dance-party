@@ -1,6 +1,7 @@
 var Dancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<img>');
   this.timeBetweenSteps = timeBetweenSteps;
+  this.jqueryMethods();
   this.step();
   this.setPosition(top, left);
 };

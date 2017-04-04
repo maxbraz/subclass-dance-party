@@ -7,5 +7,10 @@ Orco.prototype.constructor = Orco;
 
 Orco.prototype.step = function() {
   Dancer.prototype.step.call(this);
-  // this.$node.toggle();
+    this.$node.addClass('Orco')
+
+};
+
+Orco.prototype.jqueryMethods = function() {
+  this.$node.toggle();
 };

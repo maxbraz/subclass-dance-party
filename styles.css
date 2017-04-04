@@ -34,10 +34,33 @@ body, a:link, a:visited, a:active{
 }
 .HeMan{
   position: absolute;
+
 }
 .Orco{
   position: absolute;
 }
 .Skeletor{
   position: absolute;
+/*  transition-timing-function: ease-out;
+  transition-property: all;
+  /*transition-duration: 1s;  */
+
 }
+/*.spin{
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+
+}*/
+
+/*.spin {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.spin:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}*/
+
+
