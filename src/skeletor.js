@@ -7,40 +7,39 @@ Skeletor.prototype.constructor = Skeletor;
 
 Skeletor.prototype.step = function() {
   Dancer.prototype.step.call(this);
+  $('.HeMan').animate({left: this.left, top: this.top});
   this.$node.addClass('Skeletor');
 
+  this.$node.fadeOut();
 
-
-
-
-  // this.$node.fadeOut();
-	 // $('.Skeletor').on('click', function(event) {
-  //   $(this).toggle();
-  //   console.log('clicked');
-  // });
+	$('.Skeletor').on('click', function(event) {
+	  $(this).fadeIn();
+	  // $(this).toggle();
+	  // console.log('clicked');
+  });
   
-  // $('.Skeletor').on('click', function(event) {
-		// $(this).rotate(800);
-		// console.log('clicked');
-  // });
+  $('.Skeletor').on('click', function(event) {
+		$(this).rotate(800);
+		console.log('clicked');
+  });
 };
 
 
 Skeletor.prototype.jqueryMethods = function() {
-  var rotation = 0;
+ //  var rotation = 0;
 
-	jQuery.fn.rotate = function(degrees) {
-    $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
-    return $(this);
-	};
+	// jQuery.fn.rotate = function(degrees) {
+ //    $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
+ //    return $(this);
+	// };
 
-	$('.Skeletor').click(function() {
-		console.log('skeletor click')
+	// $('.Skeletor').click(function() {
+	// 	console.log('skeletor click')
 
 
-		
+
     // rotation += 1020;
     // $(this).rotate(rotation);
-	});
+	// });
 
 };

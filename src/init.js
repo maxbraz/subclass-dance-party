@@ -19,15 +19,22 @@ $(document).ready(function() {
 
   $('#lineup').on('click', function(event) {
     var newHeight = $("body").height()/2 -100;
-    console.log(newHeight);
+    var hSpace = ($("body").width()/ (window.dancers.length+1));
+    var currentX = 50;
+    // console.log($("body").width())
     for (var i = 0; i < window.dancers.length; i++) {
-      console.log(window.dancers[i]);
+      window.dancers[i].animate({left: currentX}, 1000);
+      console.log(currentX);
+      currentX += hSpace;
       window.dancers[i].animate({top: newHeight}, 1000);
     }
+
+
+
     // $(this).toggle();
-    console.log('clicked');
+    // console.log('clicked');
   });
 
-  console.log(window.dancers)
+  // console.log(window.dancers)
 });
 

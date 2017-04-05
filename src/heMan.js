@@ -14,11 +14,10 @@ HeMan.prototype.step = function() {
   // console.log(this.$node.css('left'))
   // this.$node.css('left', 0);
   
-};
-
-HeMan.prototype.jqueryMethods = function() {
   $('.HeMan').click(function(event) {
-    $(this).toggle();
-    console.log('clicked');
+    $(this).remove();
   });
-};
+}
+  HeMan.prototype.jqueryMethods = function() {
+  };
+

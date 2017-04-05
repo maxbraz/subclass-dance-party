@@ -5,7 +5,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image: url('Grayskull.jpg');
+  /*background-image: url('Grayskull.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
 }
