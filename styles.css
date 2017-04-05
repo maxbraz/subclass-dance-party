@@ -5,7 +5,6 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  /*background-image: url('Grayskull.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,8 +27,6 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-/*  border:10px solid red;
-  border-radius:10px;*/
   position:absolute;
 }
 .HeMan{
@@ -41,26 +38,8 @@ body, a:link, a:visited, a:active{
 }
 .Skeletor{
   position: absolute;
-/*  transition-timing-function: ease-out;
-  transition-property: all;
-  /*transition-duration: 1s;  */
-
 }
-/*.spin{
-  -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
-
-}*/
-
-/*.spin {
-    overflow: hidden;
-    transition-duration: 0.8s;
-    transition-property: transform;
+.killCount{
+  margin-top: -800px;
+  z-index: -100;
 }
-.spin:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}*/
-
-
